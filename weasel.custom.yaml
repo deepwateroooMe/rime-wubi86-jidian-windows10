@@ -1,0 +1,111 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.13.3
+  generator: "Weasel"
+  modified_time: "2021-07-26"
+  rime_version: 0.14.3
+
+patch:
+  style:
+    # mac
+    # inline_preedit: false
+    # color_scheme: WhiteAqua  # 匹配正文的颜色方案，对应正文的颜色方案名
+    # display_tray_icon: false
+    # horizontal: false    # 横向排列候选
+    # font_face: "Microsoft Yahei"                  # 字体 - 候选文字
+    # font_point: 13      # 字号
+    # layout:
+    #   min_width: 120
+    #   min_height: 25
+    #   border_width: 2       # 边框宽度
+    #   margin_x: 10          # 内容离边框的，左右边界
+    #   margin_y: 10          # 内容离边框的，上下边界
+    #   spacing: 0            # 候选词之间的间隔
+    #   candidate_spacing: 6
+    #   hilite_spacing: 2     # 候选词背景宽度
+    #   hilite_padding: 2    # 候选词背景的边界宽度
+    #   round_corner: 10       # 选中的候选词背景
+
+# mac:
+# author: "lamb"
+# name: "lamb"
+inline_preedit: false
+#设置是否双行显示
+horizontal: false
+#设置水平还是竖直模式
+label_color: 0x888888
+#普通标签的颜色(非第一候选字)，也就是候选字数字
+label_font_point: 12
+#普通标签的字体大小 
+font_face: "Microsoft Yahei" #PingFangSC
+#字体
+font_point: 13
+#字体大小
+layout:
+back_color: 0xffffff
+  #设置输入条的背景色，色值是按照BGR的形式16进制填写
+corner_radius: 10
+#设置输入条的圆角效果
+border_height: 4
+#设置输入条上下宽度
+border_width: 4
+#设置输入条左右宽度
+border_color: 0x9f62e8
+#输入条边框颜色，似乎在横向模式下不起作用
+border_color_width: 0
+ #输入条边框宽度
+ round_corner: 10       # 选中的候选词背景
+candidate_format: "%c %@  "
+ #设置每个候选词之间的间隔距离，%c代表备选的数字，%@代表候选字，可以通过输入空格的形式来调整每个候选字之间的间隔距离
+candidate_text_color: 0x333333    #候选字颜色
+text_color: 0x333333
+  #普通候选字的颜色，非第一候选字
+hilited_candidate_label_color: 0xffffff   #第一候选字标签颜色，也就是数字1
+hilited_text_color: 0xffffff
+  #第一候选字颜色
+hilited_candidate_back_color: 0xD05B27    #第一候选字高亮颜色(背景色)
+hilited_corner_radius: 30
+#第一候选字高亮颜色的圆角，当不设置时就是一整块的颜色，设置了圆角之后就带有圆角效果了
+  preset_color_schemes:   # 主题：颜色方案
+
+  MacRoseo: # 玫红字体
+name: MacRoseo
+author: "KyleBing <https://kylebing.cn>"
+creat_time: "2021-07-26"
+back_color: 0xFFFFFF
+border_color: 0xD6D6D6
+text_color: 0x000000
+hilited_text_color: 0x000000
+hilited_back_color: 0xFFFFFF
+hilited_candidate_text_color: 0x4F11FA
+hilited_candidate_back_color: 0xEDEDF9
+candidate_text_color: 0x000000
+comment_text_color: 0xBBCC27
+
+MacRoseoAlt: # 玫红背景
+name: MacRoseo
+author: "KyleBing <https://kylebing.cn>"
+creat_time: "2021-07-26"
+back_color: 0xFFFFFF
+border_color: 0xD6D6D6
+text_color: 0x000000
+hilited_text_color: 0x000000
+hilited_back_color: 0xFFFFFF
+hilited_candidate_text_color: 0xFFFFFF
+hilited_candidate_back_color: 0x4F11FA
+candidate_text_color: 0x000000
+comment_text_color: 0xBBCC27
+
+    WhiteAqua: # 水绿背景
+name: WhiteAqua
+author: "KyleBing <https://kylebing.cn>"
+creat_time: "2021-07-26"
+back_color: 0xFFFFFF
+border_color: 0xD6D6D6
+text_color: 0x000000
+hilited_text_color: 0x000000
+hilited_back_color: 0xFFFFFF
+hilited_candidate_text_color: 0xFFFFFF
+hilited_candidate_back_color: 0x9BAD23
+candidate_text_color: 0x000000
+comment_text_color: 0xBBCC27

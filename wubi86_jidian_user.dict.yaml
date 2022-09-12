@@ -8,7 +8,7 @@ dict_grouped: true # 词库管理应用识别：标记该码表为分组模式
 sort:
   # original
   # 码表的排序方式
-  by_weight 权重
+  by_weight # 权重
   # original 原始顺序
 
 #use_preset_vocabulary: true # 是否引入【八股文】的词频词序
@@ -28,3 +28,14 @@ heyan.huang2020@gmail.com	gmai
 6692121755	cell
 亲爱的表哥	uegs
 爱表哥，爱生活~~！！！	gsti
+痴呆傻	ukwt
+University of Idaho	uiui
+Computer Science	eecs
+Newark, CA	ncah
+https://github.com/deepwateroooMe?tab=repositories	ghme
+单例	ujwg
+同步锁	mhqi
+单例模式	uwsa
+服务端	etum
+客户端	pyum
+异或	naak

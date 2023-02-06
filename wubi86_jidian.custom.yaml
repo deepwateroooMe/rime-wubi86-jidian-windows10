@@ -1,0 +1,12 @@
+# wubi86.custom.yaml
+# save it to: 
+  #   ~/.config/ibus/rime  (linux)
+  #   ~/Library/Rime       (macos)
+  #   %APPDATA%\Rime       (windows)
+
+  patch:
+    speller/max_code_length: 4                      # 最长 4 码
+    speller/auto_select: true                       # 顶字上屏： 它说这个已经是取代了下面一行的功能，
+    # speller/auto_select_unique_candidate: true      # 无重码自动上屏，这个功能已经被弃用了
+
+    

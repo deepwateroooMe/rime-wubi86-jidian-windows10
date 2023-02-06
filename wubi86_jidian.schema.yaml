@@ -62,11 +62,27 @@ engine:
 # ————————————————
 # 版权声明：本文为CSDN博主「十月ooOO」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 # 原文链接：https://blog.csdn.net/KimBing/article/details/88042101
+
+
+# 我弄清楚情况了，现在对这部分代码做个分析：
+# AutoSelectAtMaxCodeLength() 处理：达到最大码长后，继续输入则顶字上屏。
+# 只须设有 max_code_length:，处於未转换状态的输入码就当不超过最大码长。
+# 未开启 auto_select: 亦适用。
+# AutoSelectUniqueCandidate() 处理：惟一候选自动上屏。
+# 须开启 auto_select: 及 translator/enable_completion:，后者保证尚有后续更长编码时，候选不惟一；须关闭 translator/enable_sentence:。
+# 这又分：
+# 有约束条件：设 max_code_length: 或 auto_select_pattern:，仅当满足该约束时自动上屏。
+# 无约束：遇惟一候选则立即上屏。
+# AutoSelectPreviousMatch() 处理：开启自动上屏时，连书若干字，若出现无候选的状态则按正向最大匹配的方式「断字」，将本次输入重新解释为：之前已完成的字加上一段新开始的编码。其效果类似於顶字上屏，但不是以「超过最大码长」为条件，而是以「无法作为单一编码继续完成转换」为条件。
+# 这项处理只应该用在「无约束」开启自动上屏的情况下。理由是有必要「断字」表明当前输入不满足约束条件。而现有代码并未区分有无约束条件，这是 BUG。会导致在输入「错误」编码的情况下，绕过约束条件而发生自动上屏。
+# speller/auto_select_pattern : '.{4}' 实在是 speller/max_code_length: 4 的功能等价（且开销略大的）写法。应当在 AutoSelectPreviousMatch() 处理前加上「有无约束条件」的判断。
+
+
 speller:
   max_code_length: 4                    # 四码上屏
   auto_select: true                     # 四码唯一时，自动上屏
   # auto_clear: max_length                # 空码时自动清空
-  auto_select_unique_candidate: true     # 无重码时自动上屏: 这里我好像是还没有配置好，没法自动上屏
+  # auto_select_unique_candidate: true     # 无重码时自动上屏: 这个功能已经被弃用了，不起作用
 
 translator:
   dictionary: wubi86_jidian             # 翻译器将调取此字典文件

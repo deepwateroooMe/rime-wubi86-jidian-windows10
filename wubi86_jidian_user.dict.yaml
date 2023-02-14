@@ -4,7 +4,7 @@ version: "2019-01-20"
 last_edit_time: "2021-08-07"
 dict_grouped: true # 词库管理应用识别：标记该码表为分组模式
 
-
+ 
 sort: original
   # 码表的排序方式
   # by_weight 权重
@@ -15,8 +15,35 @@ sort: original
 # 格式：字词 键码  权重 （中间是tab，不是空格）
 # '#'开头的只是注释， 注释只能另起一行写，不能在词条后面写
 # `##` 两个 # 开头的会被识别为分组名，其后跟的词条就是该组的内容
+## 这是分组名
 
 ...
-## 这是分组名
+
+亲爱的表哥	uegs
+爱表哥，爱生活！！！	gsti
+活宝妹	ipvf
+活宝妹就是一定要一定会嫁给偶亲爱的表哥！！！	itgs
+heyan.huang2020@gmail.com	gmai
+blue_water_000@hotmail.com	hmai
+6692121755	mobi
+1650 NE Valley Rd. Apt. G6 Pullman, WA 99163	home
+Jenny Huang	mmee
+028711	pswd
 分组词条	wxyt
+热更新	rgus
+程序域	tyfa
+游戏端	icum
+斗地主	ufyg
+程序集	tywy
+程序域	tyfa
+视图化	plwx
+什么意思	wtul
+线程	xgtk
+线程池	xtib
+链表	qlge
+泛型	itga
+泛型类	igod
+单例	ujwg
+操作符	rttw
+信道	wyut
 

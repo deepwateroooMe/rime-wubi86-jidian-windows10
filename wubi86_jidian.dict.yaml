@@ -2,6 +2,7 @@
 name: wubi86_jidian
 version: "4.3"
 sort: by_weight # by_weight=权重 original=原始
+# sort: original # by_weight=权重 original=原始
 import_tables: # 此处是添加用户自定义词库的地方
   - wubi86_jidian_user                # 个人私有词库
   - wubi86_jidian_extra               # 扩展词库
@@ -15477,8 +15478,8 @@ SD卡	sdhh
 寺	ffu
 封冻	ffua
 墙头	ffud
-封闭	ffuf
 封装	ffuf
+封闭	ffuf
 坛盖	ffug
 墙	ffuk
 土鳖	ffum
@@ -16931,7 +16932,7 @@ SD卡	sdhh
 救困扶危	flrq
 协查	flsj
 运输机	flsm
-协和	fltk
+协程	fltk
 雷管	fltp
 动辄得咎	fltt
 协税	fltu
@@ -28860,7 +28861,6 @@ iPod	ipod
 学好	ipvb
 濅	ipvc
 堂姐	ipve
-党建	ipvf
 洝	ipvg
 沉肃	ipvi
 浑如	ipvk
@@ -51900,9 +51900,6 @@ MacbookPro	mbp
 钿	qlg
 鈿	qlg
 多边形	qlga
-鍡	qlge
-鐶	qlge
-镮	qlge
 链球	qlgf
 鎠	qlgh
 忽略不计	qlgy
@@ -56242,7 +56239,6 @@ MacbookPro	mbp
 皇帝	rgup
 后效	rguq
 兵来将挡	rgur
-皇亲	rgus
 后首	rgut
 挟	rguw
 后背	rgux
@@ -69446,7 +69442,6 @@ TF卡	ttfhh
 长方体	tyws
 箊	tywu
 入侵	tywv
-入住	tywy
 繁文缛节	tyxa
 等高线	tyxg
 衒	tyxh
@@ -70675,7 +70670,6 @@ TF卡	ttfhh
 装	ufy
 半遮	ufya
 装	ufye
-准考证	ufyg
 装裹	ufyj
 装设	ufym
 闺房	ufyn
@@ -71414,7 +71408,6 @@ TF卡	ttfhh
 音段	ujwd
 意会	ujwf
 交易会	ujwf
-童便	ujwg
 单个	ujwh
 单侧	ujwm
 鶕	ujwo
@@ -80902,6 +80895,7 @@ m³	uuyy		立方
 集资	wyuq
 仿效	wyuq
 令尊	wyus
+信道	wyut
 停产	wyut
 俯首	wyut
 食道	wyut
@@ -81833,8 +81827,6 @@ XBox	xbox
 母盘	xgte
 纯毛	xgtf
 纯利	xgtj
-纯种	xgtk
-线程	xgtk
 线条	xgts
 母系	xgtx
 母	xgu
